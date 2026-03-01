@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gore </title>
+<style>
+body {
+  margin: 0;
+  background: black;
+  overflow: hidden;
+}
+#scare {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<h1 style="color:white;text-align:center;margin-top:40vh;">
+Loading cute cat video...
+</h1>
+
+<img id="scare" src="https://photos.app.goo.gl/6zNDjLdpbNFWjP1d9">
+
+<script>
+setTimeout(function() {
+  document.body.innerHTML = "";
+  var img = document.getElementById("scare");
+  img.style.display = "block";
+  document.body.appendChild(img);
+
+  var audio = new Audio("HnVideoEditor_2026_03_01_193226119.mp4");
+  audio.play();
+}, 4000);
+</script>
+
+</body>
+</html>
